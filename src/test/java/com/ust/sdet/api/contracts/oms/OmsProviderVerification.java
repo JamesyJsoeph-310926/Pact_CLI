@@ -20,12 +20,6 @@ import org.junit.jupiter.api.extension.RegisterExtension;
 @PactBroker(
         url = "http://127.0.0.1:9292"
 )
-
-//@PactBroker(
-//        url = "https://abcd-a1f2c3d2.pactflow.io",
-//        authentication = @PactBrokerAuth(token = "lKudSrGBS_jlJUD3mRpYLg")
-//
-//)
 public class OmsProviderVerification {
     @RegisterExtension
     private static final WireMockExtension wireMock =
