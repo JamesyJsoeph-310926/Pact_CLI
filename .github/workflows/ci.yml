@@ -55,11 +55,9 @@ jobs:
             --broker-base-url http://127.0.0.1:9292
 
       - name: 6. Can I deploy
-        env:
-          CONTRACT_VERSION: ${{ github.sha }}
         run: |
           pact-broker can-i-deploy \
           --pacticipant pos-consumer \
-          --version $CONTRACT_VERSION \
+          --version ${{ github.sha }} \
           --to-environment production \
           --broker-base-url http://127.0.0.1:9292

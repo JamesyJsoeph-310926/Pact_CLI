@@ -19,7 +19,7 @@
         <mysql.version>9.4.0</mysql.version>
         <maven.surefire.version>3.13.2</maven.surefire.version>
         <pact.version>4.6.20</pact.version>
-        <pact.broker.url>http://localhost:9292</pact.broker.url>
+        <pact.broker.url>http://127.0.0.1:9292</pact.broker.url>
         <pact.publish.consumer.version>${project.version}</pact.publish.consumer.version>
         <pact.publish.consumer.branchName>local</pact.publish.consumer.branchName>
         <git.sha>local</git.sha>
